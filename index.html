@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secret Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Password Screen -->
+  <section id="password-screen" class="screen">
+    <h2>Enter Password</h2>
+    <input type="password" id="password-input" placeholder="Password" />
+    <button onclick="checkPassword()">Enter</button>
+    <p id="password-error" class="error"></p>
+  </section>
+
+  <!-- Username Screen -->
+  <section id="username-screen" class="screen hidden">
+    <h2>Choose Username & Icon</h2>
+    <input type="text" id="username-input" placeholder="Your nickname" />
+    <select id="icon-select">
+      <option value="🧿">🧿</option>
+      <option value="🍋">🍋</option>
+      <option value="⛸️">⛸️</option>
+      <option value="🖥️">🖥️</option>
+    </select>
+    <button onclick="enterChat()">Start Chatting</button>
+    <p id="username-error" class="error"></p>
+  </section>
+
+  <!-- Chat Screen -->
+  <section id="chat-screen" class="screen hidden">
+    <div id="chat-box" class="chat-box"></div>
+    <div class="input-area">
+      <input type="text" id="message-input" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
