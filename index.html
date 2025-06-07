@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Password Screen -->
+  <section id="password-screen" class="screen">
+    <h2>Enter Password</h2>
+    <input type="password" id="password-input" placeholder="Password" />
+    <button onclick="checkPassword()">Enter</button>
+    <p id="password-error" class="error"></p>
+  </section>
 <!-- Terms Screen -->
   <div id="termsScreen" class="screen">
     <h2>Terms and Conditions</h2>
@@ -18,14 +26,6 @@
       <button type="submit">Enter Chat</button>
     </form>
   </div>
-  <!-- Password Screen -->
-  <section id="password-screen" class="screen">
-    <h2>Enter Password</h2>
-    <input type="password" id="password-input" placeholder="Password" />
-    <button onclick="checkPassword()">Enter</button>
-    <p id="password-error" class="error"></p>
-  </section>
-
   <!-- Username Screen -->
   <section id="username-screen" class="screen hidden">
     <h2>Choose Username & Icon</h2>
